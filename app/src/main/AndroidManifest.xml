@@ -13,6 +13,17 @@
         android:theme="@style/Theme.Androiddevintro"
         tools:targetApi="31">
         <activity
+            android:name=".BusinessCard"
+            android:exported="true"
+            android:label="@string/title_activity_business_card"
+            android:theme="@style/Theme.Androiddevintro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SecondaryActivity"
             android:exported="true"
             android:label="@string/title_activity_secondary"
@@ -25,10 +36,9 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Androiddevintro">
-        </activity>
+            android:theme="@style/Theme.Androiddevintro"></activity>
     </application>
 
 </manifest>

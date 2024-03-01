@@ -14,6 +14,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
@@ -43,8 +44,11 @@ fun Flagview() {
             Box(modifier = Modifier
                 .background(Color.Red)
                 .fillMaxHeight(0.35f)
-                .fillMaxWidth(0.45f)
-            ){};
+                .fillMaxWidth(0.45f),
+                contentAlignment = Alignment.Center
+            ){
+                Text(text = "Center")
+            };
             Box(modifier = Modifier
                 .background(Color.White)
                 .fillMaxHeight(0.35f)
@@ -53,8 +57,11 @@ fun Flagview() {
             Box(modifier = Modifier
                 .background(Color.Red)
                 .fillMaxHeight(0.35f)
-                .fillMaxWidth()
-            ){};
+                .fillMaxWidth(),
+                contentAlignment = Alignment.TopEnd
+            ){
+                Text(text = "Right Top")
+            };
 
         }
         Row {
@@ -68,8 +75,11 @@ fun Flagview() {
             Box(modifier = Modifier
                 .background(Color.Red)
                 .fillMaxHeight()
-                .fillMaxWidth(0.45f)
-            ){};
+                .fillMaxWidth(0.45f),
+                contentAlignment = Alignment.BottomCenter
+            ){
+                Text(text = "Bottom")
+            };
             Box(modifier = Modifier
                 .background(Color.White)
                 .fillMaxHeight()
@@ -78,8 +88,12 @@ fun Flagview() {
             Box(modifier = Modifier
                 .background(Color.Red)
                 .fillMaxHeight()
-                .fillMaxWidth()
-            ){};
+                .fillMaxWidth(),
+                contentAlignment = Alignment.TopStart
+
+            ){
+                Text(text = "Top Left")
+            };
         }
     }
 }
