@@ -46,11 +46,11 @@ class BusinessCard : ComponentActivity() {
 fun MyCard() {
     Column {
         Row {
-            Text("Hello World", textAlign = TextAlign.Left, modifier = Modifier.width(150.dp))
-            Text("Hello World", textAlign = TextAlign.Right, modifier = Modifier.width(150.dp))
+            Text("Hello World", textAlign = TextAlign.Start, modifier = Modifier.width(150.dp))
+            Text("Hello World", textAlign = TextAlign.End, modifier = Modifier.width(150.dp))
         }
         Row {
-            Text("Name", textAlign = TextAlign.Center, modifier = Modifier.height(150.dp))
+            Text("Name", textAlign = TextAlign.Center, modifier = Modifier.width(300.dp).height(300.dp).padding(20.dp))
         }
     }
 
